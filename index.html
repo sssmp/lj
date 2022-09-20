@@ -39,6 +39,20 @@ var img =arr_wxx[wx_index]
     margin-inline-end: 0px;
 }
     </style>
+<span style="font-size: 18px;"><script type="text/javascript"><br>
+		// 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+		<br>    
+		var useragent = navigator.userAgent;    if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {        // 这里警告框会阻塞当前页面继续加载
+			<br>        alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');        // 以下代码是用javascript强行关闭当前页面
+			<br>        var opened = window.open('about:blank', '_self');<br>        opened.opener = null;<br>        
+		opened.close();<br>    
+		}</script>
+	<br></span>		
+		
+		
+		
+		
+		
 	</head>
 
 <body style="
